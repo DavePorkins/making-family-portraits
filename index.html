@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#141515">
+<meta name="description" content="Ein visuelles Begleitbuch zum Workshop Making Portraits: sieben künstlerische Positionen über Familie, Nähe, Distanz und Inszenierung.">
+<meta property="og:title" content="Making Portraits — Family Portrait">
+<meta property="og:description" content="Sieben fotografische Positionen. Ein visuelles Essay als Begleitung zum Seminar.">
+<title>Making Portraits — Family Portrait</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root{--font:'DM Sans',ui-sans-serif,system-ui,sans-serif;--display:'Instrument Serif',Georgia,serif;--black:#111314;--cream:#f1eee8;--accent:#d4e6ac;--pad:clamp(20px,5vw,88px);--header:69px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:var(--header)}body{margin:0;background:var(--black);color:#fff;font-family:var(--font);-webkit-font-smoothing:antialiased}button,a{font:inherit}button{cursor:pointer}a{color:inherit}button:focus-visible,a:focus-visible{outline:3px solid #b8d5fa;outline-offset:4px}::selection{background:#dbe9c0;color:#10140f}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.progress{position:fixed;z-index:90;top:0;left:0;height:3px;width:0;background:#d8eaa9;transition:width .15s linear;pointer-events:none}.topbar{height:var(--header);position:fixed;top:0;z-index:80;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:0 var(--pad);background:rgba(15,17,17,.83);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.12)}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.brand-symbol{border:1px solid #e1e4de;border-radius:50%;width:32px;height:32px;display:grid;place-items:center;font-family:var(--display);font-style:italic;font-size:19px;font-weight:400;letter-spacing:-2px}.header-actions{display:flex;gap:8px}.top-btn{background:transparent;color:#f5f4ef;border:1px solid rgba(255,255,255,.25);border-radius:100px;padding:10px 15px;font-size:12px;white-space:nowrap}.top-btn:hover{background:rgba(255,255,255,.13)}.menu-trigger{background:#e4e9d9;color:#161a16;border:0;font-weight:700}.tiny-label{font-size:10px;letter-spacing:.23em;font-weight:700;text-transform:uppercase}.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#1c2021}.hero-image{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(4,6,6,.74),rgba(4,6,6,.1)),linear-gradient(0deg,#101313 0%,transparent 60%),url('https://aperture.org/wp-content/uploads/2024/12/Sunday-New-York-Times-1982.jpg');background-size:cover;background-position:55% center;filter:saturate(.72)}.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,9,9,.6),transparent 30%);pointer-events:none}.hero-inner{position:relative;z-index:1;padding:calc(var(--header) + 60px) var(--pad) clamp(70px,12vh,138px);width:min(100%,1200px)}.hero-kicker{color:#d7e7ad;display:flex;align-items:center;gap:14px}.hero-kicker:before{content:'';width:34px;height:1px;background:currentColor}.hero h1{font-family:var(--display);font-size:clamp(72px,13vw,190px);font-weight:400;line-height:.78;letter-spacing:-.04em;margin:36px 0 33px}.hero h1 em{font-weight:400;margin-left:clamp(20px,8vw,180px)}.hero-copy{font-size:clamp(17px,2.3vw,24px);font-weight:400;line-height:1.5;max-width:570px;color:#f3f2e9}.hero-bottom{display:flex;flex-wrap:wrap;align-items:center;gap:25px;margin-top:38px}.pill-cta{display:inline-flex;align-items:center;gap:25px;padding:16px 21px;border-radius:999px;background:#e3eacf;color:#151817;text-decoration:none;font-size:13px;font-weight:700;transition:transform .2s}.pill-cta:hover{transform:translateY(-3px)}.hero-bottom small{color:#d9d9d2;font-size:11px;letter-spacing:.05em}.hero-credit{position:absolute;bottom:16px;right:var(--pad);z-index:2;color:#eee9dd;font-size:10px;opacity:.8;text-align:right;max-width:50%}.intro{background:#eeeae2;color:#1b1e1c;padding:clamp(75px,11vw,160px) var(--pad) clamp(65px,9vw,120px)}.intro-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(30px,7vw,110px);align-items:start;max-width:1300px;margin:auto}.intro h2,.end h2{font-family:var(--display);font-weight:400;font-size:clamp(54px,8vw,120px);line-height:.94;letter-spacing:-.025em;margin:20px 0}.intro h2 em{color:#6a7661}.intro-right{padding-top:10px}.intro-right p{font-size:clamp(16px,1.9vw,23px);line-height:1.6;margin:0 0 30px}.intro-right .subnote{font-size:13px;line-height:1.8;color:#686e6b;max-width:550px}.section-index{background:#eeeae2;color:#1b1e1c;padding:0 var(--pad) 100px}.section-index-wrap{max-width:1300px;margin:auto}.index-title{border-top:1px solid #c9c8c0;padding:24px 0;display:flex;justify-content:space-between}.index-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:11px}.index-item{display:block;text-decoration:none;min-width:0}.index-thumb{height:clamp(135px,15vw,230px);background:linear-gradient(145deg,#d5d2c7,#888d83);overflow:hidden;position:relative}.index-thumb:before{content:attr(data-initials);position:absolute;inset:0;display:grid;place-items:center;font:italic 75px var(--display);color:rgba(255,255,255,.7)}.index-thumb img{position:relative;z-index:1}.index-thumb img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%);transition:filter .4s,transform .5s}.index-item:hover img{filter:grayscale(0);transform:scale(1.05)}.index-n{font-size:10px;letter-spacing:.16em;display:block;padding:12px 0 4px}.index-name{font-weight:700;font-size:clamp(10px,1.04vw,15px);line-height:1.2;display:block}.index-line{font-size:10px;color:#656a64;display:block;padding-top:5px}.chapter{--chapter-bg:#ece9e0;--chapter-fg:#171817;--chapter-secondary:#646962;--chapter-highlight:#707b68;background:var(--chapter-bg);color:var(--chapter-fg);scroll-margin-top:var(--header)}.chapter[data-mood=champagne]{--chapter-bg:#eee6dc;--chapter-fg:#211d1a;--chapter-secondary:#726b65;--chapter-highlight:#b06e45}.chapter[data-mood=honey]{--chapter-bg:#e8dfd0;--chapter-fg:#25211d;--chapter-secondary:#726b62;--chapter-highlight:#977048}.chapter[data-mood=night]{--chapter-bg:#161a1c;--chapter-fg:#f3f1e9;--chapter-secondary:#aeb4b3;--chapter-highlight:#d9d4a3}.chapter[data-mood=silver]{--chapter-bg:#e4e5e3;--chapter-fg:#161a1d;--chapter-secondary:#666c70;--chapter-highlight:#667e85}.chapter[data-mood=copper]{--chapter-bg:#2a1d1a;--chapter-fg:#f4e8db;--chapter-secondary:#d3b5a2;--chapter-highlight:#deaa79}.chapter[data-mood=moss]{--chapter-bg:#dce3d7;--chapter-fg:#202b20;--chapter-secondary:#65715f;--chapter-highlight:#697e62}.chapter[data-mood=slate]{--chapter-bg:#1c262b;--chapter-fg:#edf2f0;--chapter-secondary:#bdc9c5;--chapter-highlight:#b6d0c7}.chapter-image{height:clamp(580px,91svh,1000px);min-height:70svh;position:relative;overflow:hidden;background:#414442;color:white}.chapter-image .backdrop{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 47%;transition:transform .9s ease,filter .9s ease;filter:brightness(.82)}.chapter-image::after{content:'';inset:0;position:absolute;background:linear-gradient(0deg,rgba(8,11,10,.88) 0%,rgba(0,0,0,.15) 66%,rgba(0,0,0,.23) 100%)}.chapter-image:hover .backdrop{transform:scale(1.023)}.chapter-no{z-index:2;position:absolute;top:calc(var(--header) + 30px);left:var(--pad);font-size:11px;letter-spacing:.18em;text-transform:uppercase}.chapter-intro{position:absolute;bottom:clamp(44px,9vw,115px);left:var(--pad);right:var(--pad);z-index:2;max-width:1260px;margin:auto}.chapter-intro .rubric{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:#dfedd1;font-weight:700}.chapter-intro h2{font-family:var(--display);font-size:clamp(71px,12vw,185px);line-height:.83;letter-spacing:-.04em;font-weight:400;margin:22px 0}.chapter-intro p{font-size:clamp(19px,2.5vw,29px);line-height:1.35;max-width:790px;margin:25px 0 0}.chapter-hero-credit{position:absolute;right:var(--pad);bottom:12px;z-index:2;font-size:10px;opacity:.75}.chapter-inner{max-width:1400px;margin:auto;padding:clamp(65px,9vw,120px) var(--pad)}.bio-row{display:grid;grid-template-columns:200px 1fr;gap:clamp(26px,6vw,100px);align-items:start}.bio-pic{width:100%;aspect-ratio:3/4;object-fit:cover;background:#999;filter:grayscale(90%)}.bio-label{margin:9px 0;font-size:10px;color:var(--chapter-secondary)}.small-kicker{color:var(--chapter-highlight);font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:700}.bio-essay{display:grid;grid-template-columns:1.5fr .7fr;gap:clamp(24px,4vw,80px)}.bio-essay h3{font-family:var(--display);font-size:clamp(44px,5vw,77px);line-height:1.02;font-weight:400;letter-spacing:-.025em;margin:14px 0 25px}.bio-essay p{font-size:clamp(17px,1.8vw,20px);line-height:1.73;margin:0}.tech-meta{border-left:1px solid currentColor;padding-left:20px;align-self:start;font-size:12px;line-height:1.65}.tech-meta p{font-size:13px;line-height:1.65;color:var(--chapter-secondary);margin-top:14px}.thin-line{height:1px;background:currentColor;opacity:.2;margin:clamp(70px,9vw,130px) 0 25px}.gallery-header{display:flex;justify-content:space-between;align-items:baseline;gap:24px;margin-bottom:24px}.gallery-header h3{font-family:var(--display);font-weight:400;font-size:clamp(47px,7vw,90px);letter-spacing:-.03em;margin:12px 0}.gallery-header p{font-size:12px;color:var(--chapter-secondary);max-width:260px}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,3vw,48px)}.art-card:first-child:nth-last-child(3){grid-column:span 2}.art-card{min-width:0}.art-image{position:relative;display:block;width:100%;height:clamp(320px,50vw,690px);padding:0;border:0;overflow:hidden;background:rgba(105,104,96,.18);color:inherit}.art-card:first-child:nth-last-child(3) .art-image{height:clamp(390px,65vw,800px)}.art-image img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .5s;background:#252728}.art-image:hover img{transform:scale(1.035)}.image-zoom{position:absolute;right:17px;bottom:17px;width:43px;height:43px;border-radius:50%;background:rgba(244,243,238,.93);color:#151818;display:grid;place-items:center;font-size:22px}.art-info{padding-top:20px}.art-counter{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--chapter-secondary)}.art-info h4{font-family:var(--display);font-size:clamp(28px,3vw,42px);line-height:1.1;font-weight:400;margin:10px 0}.art-info p{font-size:14px;line-height:1.66;max-width:530px;color:var(--chapter-secondary);margin:0 0 14px}.work-links{display:flex;align-items:center;gap:16px;flex-wrap:wrap}.work-links a{font-size:12px;text-decoration:underline;text-underline-offset:4px}.work-links a:hover{opacity:.7}.image-fallback{position:absolute;inset:0;background:linear-gradient(135deg,#282d2b,#b6b2a8);display:none;align-items:center;justify-content:center;text-align:center;padding:40px;color:#fff}.image-fallback span{font-family:var(--display);font-size:clamp(25px,4vw,42px)}.art-image.is-broken .image-fallback{display:flex}.art-image.is-broken img{visibility:hidden}.extra-link{display:inline-block;margin-top:40px;text-underline-offset:5px;font-size:12px}.reflection{border-top:1px solid rgba(127,127,127,.35);margin-top:clamp(80px,10vw,160px);padding-top:35px;display:grid;grid-template-columns:.55fr 1.5fr;gap:25px}.reflection p{font-family:var(--display);font-style:italic;font-size:clamp(38px,5.8vw,86px);letter-spacing:-.025em;line-height:1.02;margin:0}.details{border-top:1px solid rgba(127,127,127,.35);border-bottom:1px solid rgba(127,127,127,.35);margin-top:70px}.details summary{list-style:none;padding:24px 0;display:flex;justify-content:space-between;gap:20px;font-size:14px;font-weight:700}.details summary::-webkit-details-marker{display:none}.details summary:after{content:'+';font-size:25px;font-weight:400;line-height:1}.details[open] summary:after{content:'−'}.details-content{display:grid;grid-template-columns:1fr 1fr;gap:30px 60px;padding:5px 0 34px}.details-content p{margin:9px 0;color:var(--chapter-secondary);line-height:1.7;font-size:14px}.chapter-nav{padding:25px var(--pad);border-top:1px solid rgba(127,127,127,.2);display:flex;align-items:center;justify-content:space-between;gap:16px}.chapter-nav a{font-size:12px;text-underline-offset:5px}.next-link{display:flex;gap:14px;align-items:center;text-decoration:none;font-size:13px;font-weight:700}.next-link strong{font-family:var(--display);font-size:31px;font-weight:400}.next-link .arr{font-size:28px}.end{background:#eae9e2;color:#1a201c;padding:clamp(70px,10vw,140px) var(--pad)}.end-wrap{max-width:1240px;margin:auto}.end h2{max-width:900px}.end-lead{font-size:clamp(17px,2.2vw,23px);line-height:1.55;max-width:660px}.exercise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:60px}.exercise{border-top:1px solid #8e968c;padding:24px 9px 10px 0}.exercise .n{font-size:11px;letter-spacing:.12em;color:#6b766b}.exercise h3{font-family:var(--display);font-size:clamp(32px,3vw,43px);font-weight:400;line-height:1.05;margin:22px 0}.exercise p{font-size:14px;line-height:1.7;max-width:340px}.end-footer{border-top:1px solid #c0c6ba;display:flex;justify-content:space-between;align-items:start;gap:30px;margin-top:100px;padding-top:27px;font-size:12px;color:#5e6860;line-height:1.8}.end-footer p{margin:0;max-width:680px}.end-footer a{text-decoration:underline;text-underline-offset:4px}.float-nav{position:fixed;z-index:75;left:50%;bottom:max(15px,env(safe-area-inset-bottom));transform:translateX(-50%);width:min(420px,calc(100% - 30px));display:flex;align-items:center;justify-content:space-between;border-radius:999px;background:rgba(22,25,24,.94);color:#fff;border:1px solid rgba(255,255,255,.21);box-shadow:0 8px 36px rgba(0,0,0,.25);backdrop-filter:blur(20px);padding:7px;transition:opacity .25s,transform .25s}.float-nav.is-hidden{opacity:0;pointer-events:none;transform:translate(-50%,20px)}.float-nav button{background:transparent;border:0;color:inherit;padding:10px 14px;border-radius:100px;font-size:12px}.float-nav button:hover{background:#414642}.float-nav .active-name{font-size:11px;letter-spacing:.04em;max-width:210px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.float-nav .go-next{background:#e6edcf;color:#1a2017;font-weight:700}.menu{position:fixed;inset:0;z-index:120;background:#141817;color:#f4f2e9;display:none;overflow:auto;padding:calc(var(--header) + 30px) var(--pad) 90px}.menu.open{display:block}.menu-head{display:flex;justify-content:space-between;gap:15px;align-items:center}.menu h2{font-family:var(--display);font-size:clamp(57px,10vw,120px);font-weight:400;letter-spacing:-.035em;line-height:.9;margin:30px 0 50px}.menu-list{max-width:1100px}.menu-item{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid rgba(255,255,255,.22);padding:18px 0;text-decoration:none;font-family:var(--display);font-size:clamp(30px,5vw,60px)}.menu-item small{font:600 10px var(--font);letter-spacing:.18em;color:#a9b6ab}.menu-item:hover{color:#cfe7ae}.lightbox{position:fixed;inset:0;z-index:200;background:rgba(10,12,12,.97);display:none;flex-direction:column;color:white}.lightbox.open{display:flex}.lightbox-top{height:72px;padding:12px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:12px}.lightbox-close,.lightbox-arrow{border:1px solid rgba(255,255,255,.35);color:white;background:rgba(0,0,0,.3);border-radius:100px;padding:9px 14px;font-size:14px}.lightbox-visual{min-height:0;flex:1;display:flex;align-items:center;justify-content:center;position:relative;padding:0 20px}.lightbox-visual img{max-height:100%;max-width:100%;object-fit:contain}.lightbox-footer{padding:14px var(--pad) max(24px,env(safe-area-inset-bottom));display:flex;gap:20px;align-items:center;justify-content:space-between}.lightbox-footer strong{font-family:var(--display);font-size:27px;font-weight:400}.lightbox-footer p{font-size:11px;color:#c0c7c2;margin:4px 0}.lightbox-footer a{font-size:12px;color:#d9e7c8;white-space:nowrap}.lightbox-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2}.lightbox-prev{left:14px}.lightbox-next{right:14px}.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}.reveal.seen{opacity:1;transform:none}
+@media(max-width:1050px){.index-grid{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:25px}.intro-grid{grid-template-columns:1fr 1fr}.bio-essay{grid-template-columns:1fr}.bio-row{grid-template-columns:140px 1fr;gap:25px}.tech-meta{border-left:0;border-top:1px solid;padding:15px 0 0;max-width:510px}.chapter-inner{padding-left:var(--pad);padding-right:var(--pad)}}
+@media(max-width:690px){:root{--pad:22px;--header:60px}.brand{font-size:9px;gap:7px}.brand-symbol{width:30px;height:30px}.header-actions .desktop-only{display:none}.top-btn{padding:9px 13px;font-size:11px}.hero-image{background-position:61% center}.hero h1{font-size:clamp(76px,17vw,130px);margin:25px 0}.hero h1 em{margin-left:22px}.hero-inner{padding-bottom:110px}.hero-credit{font-size:9px;max-width:80%}.hero-bottom{gap:18px}.intro{padding-top:80px}.intro-grid{grid-template-columns:1fr;gap:12px}.intro h2{font-size:clamp(58px,14vw,88px)}.intro-right p{font-size:18px}.index-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.index-thumb{height:clamp(180px,56vw,270px)}.index-name{font-size:14px}.chapter-image{height:90svh;min-height:590px}.chapter-no{top:calc(var(--header) + 25px)}.chapter-intro{bottom:75px}.chapter-intro h2{font-size:clamp(70px,16vw,120px);overflow-wrap:anywhere}.chapter-intro p{font-size:20px}.chapter-inner{padding-top:68px}.bio-row{grid-template-columns:90px 1fr;gap:20px}.bio-essay{display:block}.bio-essay h3{font-size:clamp(43px,10vw,65px)}.bio-essay p{font-size:16px;line-height:1.7}.bio-label{font-size:9px;line-height:1.5}.tech-meta{margin-top:26px}.gallery-header{display:block}.gallery-header h3{font-size:64px;margin-bottom:4px}.gallery{grid-template-columns:1fr;gap:45px}.art-card:first-child:nth-last-child(3){grid-column:auto}.art-image,.art-card:first-child:nth-last-child(3) .art-image{height:clamp(325px,95vw,560px)}.art-info h4{font-size:35px}.reflection{grid-template-columns:1fr;gap:24px}.reflection p{font-size:clamp(41px,11vw,70px)}.details-content{grid-template-columns:1fr;gap:24px}.exercise-grid{grid-template-columns:1fr}.exercise{padding-right:5px}.end-footer{display:block}.end-footer a{display:block;margin-top:16px}.lightbox-visual{padding:0 12px}.lightbox-arrow{top:auto;bottom:14px;transform:none}.lightbox-footer strong{font-size:22px}.lightbox-footer{padding-bottom:70px}.menu h2{margin:30px 0}.chapter-image .backdrop{object-position:center center}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="topbar"><a class="brand" href="#start" aria-label="Zur Startseite"><span class="brand-symbol">m</span><span>MAKING PORTRAITS <span style="opacity:.48">/</span> FAMILY</span></a><div class="header-actions"><a class="top-btn desktop-only" href="#index">Alle Positionen ↗</a><button class="top-btn menu-trigger" id="openMenu" type="button" aria-haspopup="dialog">Kapitel <span aria-hidden="true">☰</span></button></div></header>
+<main>
+<section class="hero" id="start" aria-labelledby="hero-title"><div class="hero-image" role="img" aria-label="Tina Barney: Sunday New York Times, 1982. Menschen um einen gedeckten Tisch."></div><div class="hero-inner"><div class="tiny-label hero-kicker">Ein visuelles Begleitbuch · Workshop 01</div><h1 id="hero-title">Making<br><em>Portraits.</em></h1><p class="hero-copy">Wie fotografieren wir Beziehungen? Sieben Positionen über Familie, Nähe, Distanz, Geste und Inszenierung.</p><div class="hero-bottom"><a class="pill-cta" href="#intro">Entdecken <span aria-hidden="true">↘</span></a><small>FAMILY PORTRAIT · 7 POSITIONEN · ca. 12 MIN</small></div></div><span class="hero-credit">Bild: Tina Barney, <i>Sunday New York Times</i> (1982) · Quelle: Aperture</span></section>
+<section class="intro" id="intro"><div class="intro-grid"><div><span class="tiny-label">Worum es geht</span><h2>Nähe ist<br><em>kein Bild.</em></h2></div><div class="intro-right"><p>Ein Familienporträt dokumentiert nicht einfach, wer zusammengehört. Es zeigt auch, wie wir uns positionieren, welche Rollen wir spielen – und wie eine Kamera diese Beziehungen verändert.</p><p>Von autobiografischen Innenräumen bis zu sorgfältig konstruierten Tableaus: Die folgenden Arbeiten zeigen sieben unterschiedliche Antworten auf die Frage, wie Nähe sichtbar werden kann.</p><p class="subnote">Zum Workshop „Making Portraits“: dokumentarische und inszenierte Fotografie, Gesten, Körperabstände, Familienbilder und die Beziehung zwischen Fotografierenden und Porträtierten. Tippe auf Fotografien für die Großansicht; Such- und Quellenlinks führen zu weiteren Werken.</p></div></div></section>
+<section class="section-index" id="index" aria-label="Kapitelübersicht"><div class="section-index-wrap"><div class="index-title"><span class="tiny-label">Die Positionen</span><span class="tiny-label">01 — 07</span></div><div class="index-grid" id="indexGrid"></div></div></section>
+<div id="chapters"></div>
+<section class="end" id="praxis"><div class="end-wrap"><span class="tiny-label">Zum Mitnehmen ins Seminar</span><h2>Die Kamera ist<br><em>nie neutral.</em></h2><p class="end-lead">Nicht nur die Menschen im Bild sind wichtig. Auch der fotografische Vorgang selbst verändert, was zwischen ihnen passiert. Drei kleine Einstiege für die Praxis:</p><div class="exercise-grid"><div class="exercise"><span class="n">01 / WAHRNEHMEN</span><h3>Beobachte erst.</h3><p>Welche Beziehung entsteht allein durch Abstand, Berührung, Sitzhöhe und Blickrichtung? Formuliere deine Wahrnehmung als Frage, nicht als Diagnose.</p></div><div class="exercise"><span class="n">02 / VERHANDELN</span><h3>Teilt die Regie.</h3><p>Lass porträtierte Menschen entscheiden, wie sie gezeigt werden möchten. Welche neue Form von Zusammenarbeit wird sichtbar?</p></div><div class="exercise"><span class="n">03 / VERÄNDERN</span><h3>Inszeniere minimal.</h3><p>Gleicher Ort, gleiche Menschen – verschiebe nur eine Geste, ein Objekt oder eine Person. Wie stark verändert sich die Erzählung?</p></div></div><div class="end-footer"><p><strong>Bildnachweise und Nutzung:</strong> Alle Werk- und Personenaufnahmen werden von externen Websites geladen und im jeweiligen Kapitel mit ihrer Herkunft verlinkt. Die Fotografien sind überwiegend urheberrechtlich geschützt (© jeweilige Kunstschaffende/Rechteinhabende). Diese Website ist eine nichtkommerzielle Lernübersicht und enthält selbst keine heruntergeladenen Werkbilder. Öffentliche Nutzung und Einbettung können zusätzliche Rechteklärung erfordern. Falls eine Quelle das Einbetten blockiert, führt die Bildsuche direkt zum Werk.</p><div><a href="#start">Zurück zum Anfang ↑</a><br><a href="https://www.google.com/search?tbm=isch&q=family+portrait+contemporary+photography+Barney+Sultan+Weems+Frazier+Lawson+Opie+Struth" target="_blank" rel="noopener noreferrer">Weitere Bilder suchen ↗</a></div></div></div></section>
+</main>
+<div class="float-nav is-hidden" id="floatNav" aria-label="Kapitel-Navigation"><button id="floatMenu" type="button" aria-label="Kapitelübersicht öffnen">☰</button><span class="active-name" id="activeName">01 / Tina Barney</span><button class="go-next" id="floatNext" type="button">Weiter ↓</button></div>
+<div class="menu" id="menu" role="dialog" aria-label="Kapitel auswählen" aria-modal="true"><div class="menu-head"><span class="tiny-label">Making Portraits · Übersicht</span><button class="top-btn" id="closeMenu" type="button">Schließen ✕</button></div><h2>Welches Bild<br><i>sehen wir jetzt?</i></h2><nav class="menu-list" id="menuList"></nav></div>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle"><div class="lightbox-top"><span class="tiny-label" id="lbCounter">WERK / 01</span><button class="lightbox-close" type="button" id="lbClose">Schließen ✕</button></div><div class="lightbox-visual"><button class="lightbox-arrow lightbox-prev" id="lbPrev" aria-label="Vorheriges Werk">←</button><img id="lbImg" alt=""><button class="lightbox-arrow lightbox-next" id="lbNext" aria-label="Nächstes Werk">→</button></div><div class="lightbox-footer"><div><strong id="lbTitle"></strong><p id="lbDesc"></p></div><a id="lbSource" href="#" target="_blank" rel="noopener noreferrer">Zur Quelle ↗</a></div></div>
+<script>
+'use strict';
+const ARTISTS=[
+  {
+    "id": "tina-barney",
+    "name": "Tina Barney",
+    "short": "Barney",
+    "number": "01",
+    "label": "Die arrangierte Nähe",
+    "series": "Theater of Manners · seit den 1980ern",
+    "years": "USA · *1945",
+    "mood": "champagne",
+    "role": "Beobachten / Arrangieren",
+    "lead": "Eine Familie kann ganz nah beieinander sein – und dennoch aneinander vorbeileben.",
+    "idea": "Barney fotografiert Familie und Bekannte aus der wohlhabenden US-Ostküstenwelt. Ihre großformatigen Farbaufnahmen lassen alltägliche Gesten wie sorgfältig arrangierte Szenen wirken: Kleidung, Tapeten, Gegenstände und Blickrichtungen erzählen ebenso viel wie die Personen.",
+    "technique": "Großformatkamera, Stativ, häufig zusätzliches Licht. Zwischen spontanen Gesten und bewusster Regie entsteht ein beinahe malerisches Tableau.",
+    "detail": "Wer spricht in diesem Raum miteinander? Und wer schaut an den anderen vorbei?",
+    "practice": "Bitte zwei Personen, eine echte Alltagshandlung kurz anzuhalten. Verändere nichts und beobachte dann, wie die Komposition sofort inszeniert wirkt.",
+    "portrait": {
+      "src": "https://images.squarespace-cdn.com/content/v1/5702ab9d746fb9634796c9f9/1489756285460-WKFKUIHIAJSNSJ2XLAUK/image-asset.jpeg",
+      "credit": "Musée Magazine",
+      "source": "https://museemagazine.com/features/2017/3/17/whm-tina-barney"
+    },
+    "video": "Tina Barney interview photography family portraits",
+    "works": [
+      {
+        "title": "Sunday New York Times",
+        "year": "1982",
+        "desc": "Ein Frühstücksraum, in dem Zeitungen, Figuren und Möbel die Blickbewegung lenken.",
+        "src": "https://aperture.org/wp-content/uploads/2024/12/Sunday-New-York-Times-1982.jpg",
+        "credit": "Aperture",
+        "source": "https://aperture.org/editorial/how-tina-barney-became-an-astute-observer-of-the-upper-class/",
+        "search": "Tina Barney Sunday New York Times 1982"
+      },
+      {
+        "title": "Jill & Polly in the Bathroom",
+        "year": "1987",
+        "desc": "Eine intime Badezimmer-Szene, die durch Spiegel, Vorhänge und Gesten zur Bühne wird.",
+        "src": "https://imgsrv.brooklynmuseum.org/collections/objects/2024.84_PS20.jpg?quality=75&width=1920",
+        "credit": "Brooklyn Museum",
+        "source": "https://www.brooklynmuseum.org/objects/225891",
+        "search": "Tina Barney Jill & Polly in the Bathroom 1987"
+      }
+    ],
+    "extra": null
+  },
+  {
+    "id": "larry-sultan",
+    "name": "Larry Sultan",
+    "short": "Sultan",
+    "number": "02",
+    "label": "Die verhandelte Rolle",
+    "series": "Pictures from Home · 1982–1992",
+    "years": "USA · 1946–2009",
+    "mood": "honey",
+    "role": "Erinnern / Verhandeln",
+    "lead": "Wer besitzt die Geschichte einer Familie – die Eltern oder das Kind mit der Kamera?",
+    "idea": "Über Jahre besucht Sultan seine Eltern im kalifornischen Vorstadthaus. Er verbindet eigene Fotografien mit Familienfilmen, Erinnerungen und Aussagen seiner Eltern. Das fotografische Porträt wird zur Auseinandersetzung darüber, wie sie gesehen werden möchten.",
+    "technique": "Farbaufnahmen im häuslichen Raum, häufig mit natürlichem oder vorhandenem Licht. Das Fotobuch verknüpft Bilder, Texte und Archivmaterial.",
+    "detail": "Welche Rolle spielt sein Vater für die Kamera – und welche Rolle spielt Sultan als Sohn?",
+    "practice": "Frage eine porträtierte Person, welches Bild sie von sich selbst zeigen möchte. Fotografiert anschließend gemeinsam eine zweite, anders verhandelte Version.",
+    "portrait": {
+      "src": "https://d1hhug17qm51in.cloudfront.net/www-media/2018/08/03024054/Larry_Sultan_athome_BW_copy.png",
+      "credit": "SFMOMA",
+      "source": "https://www.sfmoma.org/artist/Larry_Sultan/"
+    },
+    "video": "Larry Sultan Pictures from Home interview",
+    "works": [
+      {
+        "title": "Dad on Bed",
+        "year": "1984",
+        "desc": "Der Vater im Anzug auf dem Bettrand – zwischen offizieller Pose und verletzlicher Privatheit.",
+        "src": "https://media.newyorker.com/photos/5ca7bdd8a036722123da7924/4%3A3/w_1966%2Ch_1475%2Cc_limit/dad-on-bed.jpg",
+        "credit": "The New Yorker",
+        "source": "https://www.newyorker.com/culture/photo-booth/how-larry-sultan-made-his-father-a-metaphor-for-dashed-american-dreams",
+        "search": "Larry Sultan Dad on Bed 1984"
+      },
+      {
+        "title": "My Mother Posing for Me",
+        "year": "1984",
+        "desc": "Der Titel macht sichtbar, dass die Mutter nicht einfach beobachtet wird, sondern aktiv posiert.",
+        "src": "https://api.nga.gov/iiif/119556d6-b923-44b5-9172-a6e9e181cdd1/full/%21800%2C800/0/default.jpg",
+        "credit": "National Gallery of Art",
+        "source": "https://www.nga.gov/artworks/219483-my-mother-posing-me",
+        "search": "Larry Sultan My Mother Posing for Me 1984"
+      }
+    ],
+    "extra": null
+  },
+  {
+    "id": "carrie-mae-weems",
+    "name": "Carrie Mae Weems",
+    "short": "Weems",
+    "number": "03",
+    "label": "Der Tisch als Bühne",
+    "series": "Kitchen Table Series · 1990",
+    "years": "USA · *1953",
+    "mood": "night",
+    "role": "Inszenieren / Erzählen",
+    "lead": "Ein Küchentisch. Eine Lampe. Ein Raum, in dem ein ganzes Leben stattfinden kann.",
+    "idea": "Weems tritt selbst als zentrale Figur in einer inszenierten Geschichte über Beziehungen, Mutterschaft, Freundschaft, Begehren und Selbstbestimmung auf. Wiederholung des Bildausschnitts und begleitende Texttafeln verwandeln alltägliche Gesten in eine vielschichtige Erzählung.",
+    "technique": "Konstante Frontalperspektive, kontrolliertes Licht unter einer Deckenlampe, Schwarzweiß. Die Werkgruppe umfasst 20 Fotografien und 14 Texttafeln.",
+    "detail": "Was verändert sich, wenn der Ort gleich bleibt, aber die Körper und Beziehungen wechseln?",
+    "practice": "Lege einen festen Kamerastandpunkt fest. Fotografiere dieselbe Tischszene dreimal, jeweils mit einer anderen sozialen Konstellation.",
+    "portrait": {
+      "src": "https://hips.hearstapps.com/hmg-prod/images/portrait-of-carrie-rolex-audoin-desforges-6977bbd06d8ce.jpg?crop=1.00xw%3A0.668xh%3B0%2C0.0662xh&resize=1120%3A%2A",
+      "credit": "Harper’s Bazaar",
+      "source": "https://www.harpersbazaar.com/culture/art-books-music/a70081776/carrie-mae-weems-contested-sites-memory/"
+    },
+    "video": "Carrie Mae Weems Art21 Kitchen Table Series",
+    "works": [
+      {
+        "title": "Untitled (Woman and Daughter with Makeup)",
+        "year": "1990",
+        "desc": "Mutter und Tochter führen vor dem Spiegel eine intime, erlernte Geste parallel aus.",
+        "src": "https://s1.img.bidsquare.com/item/xl/3592/35922044.jpeg?t=1W2X5G",
+        "credit": "Brunk Auctions (Werkabbildung)",
+        "source": "https://www.clevelandart.org/art/2008.116.12",
+        "search": "Carrie Mae Weems Untitled (Woman and Daughter with Makeup) 1990"
+      },
+      {
+        "title": "Untitled (Woman Playing Solitaire)",
+        "year": "1990",
+        "desc": "Allein am Tisch wird aus der sozialen Bühne ein Ort selbstbestimmter Präsenz.",
+        "src": "https://aperture.org/wp-content/uploads/2021/05/223MAG136_Weems-Blessing-HR-1024x1022.jpg",
+        "credit": "Aperture",
+        "source": "https://aperture.org/editorial/vision-justice-around-kitchen-table/",
+        "search": "Carrie Mae Weems Untitled (Woman Playing Solitaire) 1990"
+      }
+    ],
+    "extra": null
+  },
+  {
+    "id": "latoya-ruby-frazier",
+    "name": "LaToya Ruby Frazier",
+    "short": "Frazier",
+    "number": "04",
+    "label": "Geteilte Autorschaft",
+    "series": "The Notion of Family · 2001–2014",
+    "years": "USA · *1982",
+    "mood": "silver",
+    "role": "Mitwirken / Bezeugen",
+    "lead": "Ein Familienbild kann zugleich eine Geschichte von Körpern, Arbeit und einer ganzen Stadt erzählen.",
+    "idea": "In Braddock, Pennsylvania, fotografiert Frazier sich, ihre Mutter und Großmutter vor dem Hintergrund von Deindustrialisierung, Umweltbelastung und gesundheitlicher Ungleichheit. Insbesondere die Porträts mit ihrer Mutter entstehen in enger Zusammenarbeit.",
+    "technique": "Schwarzweißfotografie, Selbstporträts, Spiegel und geteilte Bildautorschaft. Das Persönliche und das Politische werden gleichzeitig sichtbar.",
+    "detail": "Wer ist hier Autorin, wer ist Subjekt – und wie lässt sich diese Trennung auflösen?",
+    "practice": "Gib der porträtierten Person Mitspracherecht über Pose, Ausschnitt und Auslösung. Besprecht danach, wem das Bild gehört.",
+    "portrait": {
+      "src": "https://images.squarespace-cdn.com/content/v1/5702ab9d746fb9634796c9f9/1489157447383-X7YHSV2OO3S7NXBK13U9/LRF%2Bheadshot%2BBret%2BHartman%2C%2BTED%2B2015.jpg?format=2500w",
+      "credit": "Musée Magazine / Bret Hartman",
+      "source": "https://museemagazine.com/features/2017/3/10/whm-latoya-ruby-frazier"
+    },
+    "video": "LaToya Ruby Frazier The Notion of Family Art21",
+    "works": [
+      {
+        "title": "Momme",
+        "year": "2008",
+        "desc": "Mutter und Tochter überlagern sich visuell; das Porträt verhandelt ihre Verbundenheit.",
+        "src": "https://www.icaboston.org/wp-content/uploads/2023/03/latoya-ruby-fraziermomme-2008.jpg",
+        "credit": "ICA Boston",
+        "source": "https://www.icaboston.org/art/latoya-ruby-frazier/momme/",
+        "search": "LaToya Ruby Frazier Momme 2008"
+      },
+      {
+        "title": "Grandma Ruby and Me",
+        "year": "2005",
+        "desc": "Zwei Generationen im Wohnraum, umgeben von Gegenständen und Familiengeschichte.",
+        "src": "https://cdn.sanity.io/images/cctd4ker/production/587d519182f094fe2becc3169b3f8e6a47d5d980-600x482.jpg?auto=format&fit=clip&q=75&w=3840",
+        "credit": "The Metropolitan Museum of Art",
+        "source": "https://www.metmuseum.org/perspectives/the-artist-project-latoya-ruby-frazier",
+        "search": "LaToya Ruby Frazier Grandma Ruby and Me 2005"
+      },
+      {
+        "title": "Momme (Floral Comforter)",
+        "year": "2008",
+        "desc": "Die gemeinsame frontale Pose betont zugleich Ähnlichkeit und die Eigenständigkeit beider Personen.",
+        "src": "https://static.time.com/v3/assets/bltea6093859af6183b/bltcaea98f429805bb2/69879899f887dc5218e8b582/0015momme-floral-comforter.jpg?auto=webp&branch=production&quality=75&width=3840",
+        "credit": "TIME",
+        "source": "https://time.com/4054550/photographer-latoya-ruby-frazier-wins-macarthur-genius-grant-of-625000/",
+        "search": "LaToya Ruby Frazier Momme (Floral Comforter) 2008"
+      }
+    ],
+    "extra": {
+      "title": "Momme Portrait Series (Shadow), 2008",
+      "source": "https://rosegallery.net/artworks/22502-latoya-ruby-frazier-momme-shadow-from-momme-portrait-series-2008/"
+    }
+  },
+  {
+    "id": "deana-lawson",
+    "name": "Deana Lawson",
+    "short": "Lawson",
+    "number": "05",
+    "label": "Die gebaute Ikone",
+    "series": "Porträts und familiäre Konstellationen",
+    "years": "USA · *1979",
+    "mood": "copper",
+    "role": "Konstruieren / Erhöhen",
+    "lead": "Was wie ein privater Schnappschuss aussieht, kann eine präzise gebaute Ikone sein.",
+    "idea": "Lawson fotografiert Menschen in intimen Innenräumen. Ihre Porträts sind häufig bewusst komponiert: Kleidung, Gegenstände, Blicke und Berührungen erzeugen eine besondere körperliche und symbolische Präsenz. Familienbeziehungen können real, gewählt oder bildlich hergestellt sein.",
+    "technique": "Großformat, intensive Farbe, direkte Präsenz und minutiöse Inszenierung. Private Innenräume werden zu monumentalen Bildräumen.",
+    "detail": "Welche Objekte im Hintergrund liefern Hinweise auf Herkunft, Beziehungen und Selbstbild?",
+    "practice": "Gestalte ein Porträt, in dem mindestens drei Gegenstände bewusst gewählt sind. Lass die porträtierte Person die Bedeutungen mitbestimmen.",
+    "portrait": {
+      "src": "https://culturedmag.nyc3.cdn.digitaloceanspaces.com/uploads/2021/04/Self_Portrait_Hi_Res.jpg",
+      "credit": "Cultured (Selbstporträt)",
+      "source": "https://www.culturedmag.com/article/2021/05/03/deana-lawson/"
+    },
+    "video": "Deana Lawson photography interview",
+    "works": [
+      {
+        "title": "Binky & Tony Forever",
+        "year": "2009",
+        "desc": "Eine eng verschlungene Umarmung im Schlafzimmer: Nähe und Inszenierung zugleich.",
+        "src": "https://res.cloudinary.com/dkvtc5ncc/image/upload/c_limit%2Cw_1080/f_auto/q_auto/v1743351114/Black_Life_05_2a0010d23a?_a=BAVC1WID0",
+        "credit": "PhotoAnthology",
+        "source": "https://photoanthology.org/projects/black-life",
+        "search": "Deana Lawson Binky & Tony Forever 2009"
+      },
+      {
+        "title": "Sons of Cush",
+        "year": "2016",
+        "desc": "Ein Vater mit Baby, umgeben von Fotografien und Objekten: Familie als Bildraum.",
+        "src": "https://huismarseille.nl/app/uploads/2019/04/DL-Sons-of-Cush-150-dpi.jpg",
+        "credit": "Huis Marseille",
+        "source": "https://huismarseille.nl/en/exhibitions/deana-lawson/",
+        "search": "Deana Lawson Sons of Cush 2016"
+      }
+    ],
+    "extra": null
+  },
+  {
+    "id": "catherine-opie",
+    "name": "Catherine Opie",
+    "short": "Opie",
+    "number": "06",
+    "label": "Familie neu sehen",
+    "series": "Domestic · 1995–1998",
+    "years": "USA · *1961",
+    "mood": "moss",
+    "role": "Sichtbar machen / Zugehören",
+    "lead": "Familie ist nicht nur Abstammung. Familie entsteht auch dort, wo Menschen füreinander da sind.",
+    "idea": "Für Domestic fotografierte Opie lesbische Paare, Freundeskreise und Familien in ihrem Zuhause. Die alltäglichen Situationen erhalten eine Würde, die in historischen Familienporträts oft nur normativen Familienformen zugestanden wurde.",
+    "technique": "Farbige Innenraumporträts mit klarer, ruhiger Komposition. Die Fotografierte Umgebung wird als eigener Ausdruck von Identität und Zugehörigkeit lesbar.",
+    "detail": "Was verändert sich an der Idee des Familienporträts, wenn wir Familie nicht biologisch definieren?",
+    "practice": "Fotografiere Zugehörigkeit ohne eine klassische Gruppenaufstellung. Welche Geste oder räumliche Nähe reicht aus?",
+    "portrait": {
+      "src": "https://risdmuseum.cdn.picturepark.com/v/Y7XaijCv/",
+      "credit": "RISD Museum",
+      "source": "https://risdmuseum.org/exhibitions-events/events/catherine-opie-state-being"
+    },
+    "video": "Catherine Opie Domestic series Art21 interview",
+    "works": [
+      {
+        "title": "Domestic Family Portrait",
+        "year": "1990er",
+        "desc": "Ein häuslicher Moment zwischen Erwachsenen und Kind: nicht spektakulär, gerade deshalb bedeutsam.",
+        "src": "https://s3.amazonaws.com/files.collageplatform.com.prod/image_cache/1800x1800_fit/54522d19cfaf3430698b4568/11b6106222ab997100da7ae642fefa4e.jpeg",
+        "credit": "Regen Projects",
+        "source": "https://www.regenprojects.com/exhibitions/catherine-opie3",
+        "search": "Catherine Opie Domestic Family Portrait 1990er"
+      },
+      {
+        "title": "Miggi & Ilene, Los Angeles",
+        "year": "1990er",
+        "desc": "Zwei Menschen, Bett, Hund, Bilder an der Wand: Alltagsnähe jenseits normativer Porträtrituale.",
+        "src": "https://s3.amazonaws.com/files.collageplatform.com.prod/image_cache/1820x1200_fit/54522d19cfaf3430698b4568/952094aba3950f8654c062a2ad2038df.jpeg",
+        "credit": "Regen Projects",
+        "source": "https://www.regenprojects.com/exhibitions/catherine-opie3",
+        "search": "Catherine Opie Miggi & Ilene, Los Angeles 1990er"
+      }
+    ],
+    "extra": {
+      "title": "Self-Portrait/Cutting, 1993 (enthält eine Darstellung von Hautverletzungen)",
+      "source": "https://www.google.com/search?tbm=isch&q=Catherine+Opie+Self+Portrait+Cutting+1993"
+    }
+  },
+  {
+    "id": "thomas-struth",
+    "name": "Thomas Struth",
+    "short": "Struth",
+    "number": "07",
+    "label": "Die stille Ordnung",
+    "series": "Family Portraits · seit 1985",
+    "years": "Deutschland · *1954",
+    "mood": "slate",
+    "role": "Positionieren / Beobachten",
+    "lead": "Wenn alle in die Kamera schauen, werden die Zwischenräume sichtbar.",
+    "idea": "Struths Familienporträts zeigen Gruppen in ihren eigenen Interieurs. Sitzordnung, Blicke, Berührungen und Abstände lassen Fragen nach familiärer Zugehörigkeit und Rollen entstehen – ohne dass das Bild eindeutige psychologische Antworten liefern müsste.",
+    "technique": "Häufig große Kamera auf Stativ, frontale Komposition, sorgfältig gewählter Raum und ausgeprägte Detailschärfe. Die Familien sind aktiv an ihrer Positionierung beteiligt.",
+    "detail": "Was lesen wir in der Sitzordnung – und was projizieren wir möglicherweise selbst hinein?",
+    "practice": "Lass eine Gruppe ihren Platz vor der Kamera selbst wählen. Mach ein Bild; bitte sie danach, nur eine Position zu ändern. Vergleicht die Wirkung.",
+    "portrait": {
+      "src": "https://www.sammlung-essl.at/jart/prj3/essl/images/img-db/1378127458129.jpg",
+      "credit": "Sammlung Essl",
+      "source": "https://sammlung-essl.at/jart/prj3/essl/main.jart?article_id=1364874377453&content-id=1363947043047&rel=de&reserve-mode=active"
+    },
+    "video": "Thomas Struth family portraits interview",
+    "works": [
+      {
+        "title": "The Richter Family I, Köln",
+        "year": "2002",
+        "desc": "Eine bewusste Anordnung von Menschen im Wohnzimmer; Nähe und Distanz werden in der Haltung erfahrbar.",
+        "src": "https://media.mutualart.com/Images/2009_03/12/0019/87403/87403_9108a7d5-3bf8-4faf-b9d5-74711124d915_-1_570.Jpeg",
+        "credit": "MutualArt / Thomas Struth",
+        "source": "https://high.org/collection/the-richter-family-1-koln/",
+        "search": "Thomas Struth The Richter Family I, Köln 2002"
+      },
+      {
+        "title": "The Hirose Family, Hiroshima",
+        "year": "1987",
+        "desc": "Eine Familie in mehreren Reihen zwischen Sofa, Kunstwerken und Alltagsgegenständen.",
+        "src": "https://thomas-struth.com/files/2022/02/struth-03561-the-hirose-family-1.jpg",
+        "credit": "Thomas Struth (offizielle Website)",
+        "source": "https://thomas-struth.com/",
+        "search": "Thomas Struth The Hirose Family, Hiroshima 1987"
+      }
+    ],
+    "extra": null
+  }
+];
+const $=id=>document.getElementById(id);
+const q=s=>encodeURIComponent(s);
+const google=q=>`https://www.google.com/search?tbm=isch&q=${encodeURIComponent(q)}`;
+const youtube=q=>`https://www.youtube.com/results?search_query=${encodeURIComponent(q)}`;
+const clean=s=>String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const imgTag=(url,alt,loading='lazy')=>`<img src="${clean(url)}" alt="${clean(alt)}" loading="${loading}" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('.art-image')?.classList.add('is-broken')">`;
+let lightboxItems=[],lbIndex=0,activeArtistIndex=0,lastFocus=null;
+$('indexGrid').innerHTML=ARTISTS.map(a=>`<a class="index-item" href="#${a.id}"><div class="index-thumb" data-initials="${a.number}"><img src="${clean(a.portrait.src)}" alt="Porträt: ${clean(a.name)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"></div><span class="index-n">${a.number} / 07</span><span class="index-name">${clean(a.name)}</span><span class="index-line">${clean(a.label)}</span></a>`).join('');
+$('menuList').innerHTML=ARTISTS.map(a=>`<a class="menu-item" href="#${a.id}" data-menu-link><span><small>${a.number} / 07</small><br>${clean(a.name)}</span><span style="font:16px var(--font)">↗</span></a>`).join('');
+const chapterHTML=(a,i)=>{
+const first=a.works[0];
+const worksHTML=a.works.map((w,j)=>{
+  const n=lightboxItems.push({w,a})-1;
+  return `<article class="art-card reveal"><button class="art-image" type="button" data-lightbox="${n}" aria-label="${clean(w.title)} als Großansicht öffnen">${imgTag(w.src,a.name+' — '+w.title)}<div class="image-fallback"><span>Bild extern nicht verfügbar.<br>Werk über die Bildsuche öffnen ↗</span></div><span class="image-zoom" aria-hidden="true">↗</span></button><div class="art-info"><span class="art-counter">WERK 0${j+1} / 0${a.works.length} · ${clean(w.year)}</span><h4>${clean(w.title)}</h4><p>${clean(w.desc)}</p><div class="work-links"><a href="${clean(w.source)}" target="_blank" rel="noopener noreferrer">Quelle: ${clean(w.credit)} ↗</a><a href="${google(w.search)}" target="_blank" rel="noopener noreferrer">Google Bilder ↗</a></div></div></article>`;
+}).join('');
+return `<section class="chapter" id="${a.id}" data-mood="${a.mood}" data-artist="${i}"><div class="chapter-image"><img class="backdrop" src="${clean(first.src)}" alt="${clean(a.name+': '+first.title)}" loading="${i===0?'eager':'lazy'}" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="chapter-no">POSITION ${a.number} / 07 &nbsp;·&nbsp; ${clean(a.label)}</span><div class="chapter-intro"><span class="rubric">${clean(a.role)}</span><h2>${clean(a.name)}</h2><p>${clean(a.lead)}</p></div><span class="chapter-hero-credit">${clean(first.title)}, ${clean(first.year)} · ${clean(first.credit)}</span></div><div class="chapter-inner"><div class="bio-row reveal"><div><a href="${clean(a.portrait.source)}" target="_blank" rel="noopener noreferrer" aria-label="Quelle zum Porträt von ${clean(a.name)} öffnen"><img class="bio-pic" src="${clean(a.portrait.src)}" alt="Porträt von ${clean(a.name)}" loading="lazy" referrerpolicy="no-referrer"></a><p class="bio-label">${clean(a.portrait.credit)} ↗</p></div><div class="bio-essay"><div><span class="small-kicker">${clean(a.years)} · ${clean(a.series)}</span><h3>Die Position.</h3><p>${clean(a.idea)}</p></div><div class="tech-meta"><span class="small-kicker">Die Bildsprache</span><p>${clean(a.technique)}</p><div style="margin-top:25px"><a href="${google(a.name+' '+a.series+' photography')}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-bottom:12px">↗ Alle Bilder</a><br><a href="${youtube(a.video)}" target="_blank" rel="noopener noreferrer">↗ Videos & Talks</a></div></div></div></div><div class="thin-line"></div><div class="gallery-header reveal"><div><span class="small-kicker">Ausgewählte Arbeiten</span><h3>Genauer hinsehen.</h3></div><p>Antippen, um groß anzusehen. Quellen und Bildersuche öffnen weitere Ansichten.</p></div><div class="gallery">${worksHTML}</div>${a.extra?`<a class="extra-link" href="${clean(a.extra.source)}" target="_blank" rel="noopener noreferrer">Noch ein wichtiges Werk: ${clean(a.extra.title)} ↗</a>`:''}<div class="reflection reveal"><span class="small-kicker">Eine Frage an das Bild</span><p>${clean(a.detail)}</p></div><details class="details"><summary>Zum Ausprobieren: Kamera und Körper <span class="sr-only">Details aufklappen</span></summary><div class="details-content"><div><span class="small-kicker">Fotografische Haltung</span><p>${clean(a.technique)}</p></div><div><span class="small-kicker">Eine kleine Übung</span><p>${clean(a.practice)}</p></div></div></details></div><div class="chapter-nav"><a href="#index">↑ Alle Positionen</a><a class="next-link" href="#${i===ARTISTS.length-1?'praxis':ARTISTS[i+1].id}"><span>${i===ARTISTS.length-1?'Zur Praxis': 'Nächste Position'}<br><strong>${i===ARTISTS.length-1?'Dein Blick':clean(ARTISTS[i+1].short)}</strong></span><span class="arr">↘</span></a></div></section>`;
+};
+$('chapters').innerHTML=ARTISTS.map(chapterHTML).join('');
+function openMenu(){lastFocus=document.activeElement;$('menu').classList.add('open');document.body.style.overflow='hidden';$('closeMenu').focus()}
+function closeMenu(){if(!$('menu').classList.contains('open'))return;$('menu').classList.remove('open');document.body.style.overflow='';lastFocus?.focus()}
+$('openMenu').addEventListener('click',openMenu);$('floatMenu').addEventListener('click',openMenu);$('closeMenu').addEventListener('click',closeMenu);
+document.querySelectorAll('[data-menu-link]').forEach(a=>a.addEventListener('click',closeMenu));
+function openLightbox(idx){if(!Number.isInteger(idx)||!lightboxItems[idx])return;lastFocus=document.activeElement;lbIndex=idx;$('lightbox').classList.add('open');document.body.style.overflow='hidden';renderLightbox();$('lbClose').focus()}
+function closeLightbox(){$('lightbox').classList.remove('open');document.body.style.overflow='';lastFocus?.focus()}
+function renderLightbox(){const {w,a}=lightboxItems[lbIndex];$('lbCounter').textContent=`${a.name} · WERK ${lbIndex+1}/${lightboxItems.length}`;$('lbImg').src=w.src;$('lbImg').alt=`${a.name}: ${w.title}`;$('lbTitle').textContent=`${w.title}, ${w.year}`;$('lbDesc').textContent=w.desc;$('lbSource').href=w.source}
+function moveLightbox(n){lbIndex=(lbIndex+n+lightboxItems.length)%lightboxItems.length;renderLightbox()}
+document.querySelectorAll('[data-lightbox]').forEach(b=>b.addEventListener('click',()=>{const n=Number(b.dataset.lightbox);if(b.classList.contains('is-broken'))window.open(google(lightboxItems[n].w.search),'_blank','noopener');else openLightbox(n)}));
+$('lbClose').addEventListener('click',closeLightbox);$('lbPrev').addEventListener('click',()=>moveLightbox(-1));$('lbNext').addEventListener('click',()=>moveLightbox(1));
+$('lightbox').addEventListener('click',e=>{if(e.target===$('lightbox'))closeLightbox()});
+window.addEventListener('keydown',e=>{if(e.key==='Escape'){if($('lightbox').classList.contains('open'))closeLightbox();else closeMenu()}if($('lightbox').classList.contains('open')&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){if(e.key==='ArrowLeft')moveLightbox(-1);if(e.key==='ArrowRight')moveLightbox(1)}});
+$('floatNext').addEventListener('click',()=>{const next=ARTISTS[activeArtistIndex+1];document.getElementById(next?.id??'praxis').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'})});
+const watchSections=[...document.querySelectorAll('.chapter')];
+let ticking=false;
+function updateScroll(){const scrollTop=window.scrollY,limit=document.documentElement.scrollHeight-window.innerHeight;$('progress').style.width=`${limit?Math.max(0,Math.min(100,scrollTop/limit*100)):0}%`;
+ const at=scrollTop+window.innerHeight*.42;
+ let idx=watchSections.findIndex((s,i)=>at>=s.offsetTop&&(i===watchSections.length-1||at<watchSections[i+1].offsetTop));
+ if(idx<0)idx=at<watchSections[0].offsetTop?0:ARTISTS.length-1;
+ activeArtistIndex=idx;$('activeName').textContent=`${ARTISTS[idx].number} / ${ARTISTS[idx].name}`;
+ $('floatNext').textContent=idx===ARTISTS.length-1?'Zur Praxis ↓':'Weiter ↓';
+ const show=scrollTop>document.getElementById('index').offsetTop+150&&scrollTop<document.getElementById('praxis').offsetTop-120;
+ $('floatNav').classList.toggle('is-hidden',!show);ticking=false;}
+window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateScroll);ticking=true}},{passive:true});window.addEventListener('resize',updateScroll);updateScroll();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('seen');observer.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -25px 0px'});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
