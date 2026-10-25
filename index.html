@@ -18,11 +18,32 @@
 @media(max-width:1050px){.index-grid{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:25px}.intro-grid{grid-template-columns:1fr 1fr}.bio-essay{grid-template-columns:1fr}.bio-row{grid-template-columns:140px 1fr;gap:25px}.tech-meta{border-left:0;border-top:1px solid;padding:15px 0 0;max-width:510px}.chapter-inner{padding-left:var(--pad);padding-right:var(--pad)}}
 @media(max-width:690px){:root{--pad:22px;--header:60px}.brand{font-size:9px;gap:7px}.brand-symbol{width:30px;height:30px}.header-actions .desktop-only{display:none}.top-btn{padding:9px 13px;font-size:11px}.hero-image{background-position:61% center}.hero h1{font-size:clamp(76px,17vw,130px);margin:25px 0}.hero h1 em{margin-left:22px}.hero-inner{padding-bottom:110px}.hero-credit{font-size:9px;max-width:80%}.hero-bottom{gap:18px}.intro{padding-top:80px}.intro-grid{grid-template-columns:1fr;gap:12px}.intro h2{font-size:clamp(58px,14vw,88px)}.intro-right p{font-size:18px}.index-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.index-thumb{height:clamp(180px,56vw,270px)}.index-name{font-size:14px}.chapter-image{height:90svh;min-height:590px}.chapter-no{top:calc(var(--header) + 25px)}.chapter-intro{bottom:75px}.chapter-intro h2{font-size:clamp(70px,16vw,120px);overflow-wrap:anywhere}.chapter-intro p{font-size:20px}.chapter-inner{padding-top:68px}.bio-row{grid-template-columns:90px 1fr;gap:20px}.bio-essay{display:block}.bio-essay h3{font-size:clamp(43px,10vw,65px)}.bio-essay p{font-size:16px;line-height:1.7}.bio-label{font-size:9px;line-height:1.5}.tech-meta{margin-top:26px}.gallery-header{display:block}.gallery-header h3{font-size:64px;margin-bottom:4px}.gallery{grid-template-columns:1fr;gap:45px}.art-card:first-child:nth-last-child(3){grid-column:auto}.art-image,.art-card:first-child:nth-last-child(3) .art-image{height:clamp(325px,95vw,560px)}.art-info h4{font-size:35px}.reflection{grid-template-columns:1fr;gap:24px}.reflection p{font-size:clamp(41px,11vw,70px)}.details-content{grid-template-columns:1fr;gap:24px}.exercise-grid{grid-template-columns:1fr}.exercise{padding-right:5px}.end-footer{display:block}.end-footer a{display:block;margin-top:16px}.lightbox-visual{padding:0 12px}.lightbox-arrow{top:auto;bottom:14px;transform:none}.lightbox-footer strong{font-size:22px}.lightbox-footer{padding-bottom:70px}.menu h2{margin:30px 0}.chapter-image .backdrop{object-position:center center}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Compact site-wide share control and self-contained QR overlay */
+.share-trigger{width:40px;height:40px;min-width:40px;padding:0;display:grid;place-items:center}
+.share-trigger svg{display:block}
+.share-overlay{position:fixed;inset:0;z-index:240;display:grid;place-items:center;overflow-y:auto;padding:24px;background:rgba(6,9,8,.8);backdrop-filter:blur(9px);-webkit-backdrop-filter:blur(9px)}
+.share-overlay[hidden]{display:none}
+.share-card{width:min(100%,410px);max-height:calc(100svh - 48px);overflow-y:auto;background:#eeeae2;color:#1c231d;border-radius:20px;padding:clamp(22px,4vw,30px);box-shadow:0 26px 80px rgba(0,0,0,.45);text-align:center}
+.share-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;text-align:left}
+.share-head .tiny-label{color:#697568}
+.share-head h2{font:400 clamp(44px,8vw,55px)/.95 var(--display);margin:14px 0 0}
+.share-close{width:38px;height:38px;flex:none;border:1px solid #a3aaa0;border-radius:50%;background:transparent;color:#20271f;font-size:18px}
+.share-close:hover{background:#dce0d5}
+.share-subtitle{font-size:13px;line-height:1.6;color:#626b61;text-align:left;margin:17px 0 18px}
+.share-qr-frame{width:min(100%,300px);margin:0 auto 17px;padding:10px;background:#fff;border-radius:10px}
+.share-qr-frame img{display:block;width:100%;height:auto;image-rendering:pixelated}
+.share-url{display:block;font-size:12px;line-height:1.6;overflow-wrap:anywhere;color:#283b31;text-decoration:underline;text-underline-offset:4px}
+.share-copy{width:100%;border:0;border-radius:999px;background:#202c25;color:#f4f5ea;margin-top:18px;padding:14px 19px;font-size:13px;font-weight:700}
+.share-copy:hover{background:#3b4d40}
+.share-feedback{min-height:17px;margin:8px 0 0;font-size:12px;color:#46604a}
+@media(max-width:690px){.topbar{gap:7px}.header-actions{gap:6px}.share-trigger{width:35px;height:35px;min-width:35px}.top-btn.menu-trigger{padding:9px 11px}}
+@media(max-width:350px){.brand{font-size:8px}.brand-symbol{width:28px;height:28px}.top-btn.menu-trigger{padding:9px 8px}.topbar{gap:5px}}
 </style>
 </head>
 <body>
 <div class="progress" id="progress" aria-hidden="true"></div>
-<header class="topbar"><a class="brand" href="#start" aria-label="Zur Startseite"><span class="brand-symbol">m</span><span>MAKING PORTRAITS <span style="opacity:.48">/</span> FAMILY</span></a><div class="header-actions"><a class="top-btn desktop-only" href="#index">Alle Positionen ↗</a><button class="top-btn menu-trigger" id="openMenu" type="button" aria-haspopup="dialog">Kapitel <span aria-hidden="true">☰</span></button></div></header>
+<header class="topbar"><a class="brand" href="#start" aria-label="Zur Startseite"><span class="brand-symbol">m</span><span>MAKING PORTRAITS <span style="opacity:.48">/</span> FAMILY</span></a><div class="header-actions"><a class="top-btn desktop-only" href="#index">Alle Positionen ↗</a><button class="top-btn share-trigger" type="button" id="openShare" aria-haspopup="dialog" aria-label="Website teilen" title="Website teilen"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.7 10.5 6.5-3.8M8.7 13.5l6.5 3.8"/></svg></button><button class="top-btn menu-trigger" id="openMenu" type="button" aria-haspopup="dialog">Kapitel <span aria-hidden="true">☰</span></button></div></header>
 <main>
 <section class="hero" id="start" aria-labelledby="hero-title"><div class="hero-image" role="img" aria-label="Tina Barney: Sunday New York Times, 1982. Menschen um einen gedeckten Tisch."></div><div class="hero-inner"><div class="tiny-label hero-kicker">Ein visuelles Begleitbuch · Workshop 01</div><h1 id="hero-title">Making<br><em>Portraits.</em></h1><p class="hero-copy">Wie fotografieren wir Beziehungen? Sieben Positionen über Familie, Nähe, Distanz, Geste und Inszenierung.</p><div class="hero-bottom"><a class="pill-cta" href="#intro">Entdecken <span aria-hidden="true">↘</span></a><small>FAMILY PORTRAIT · 7 POSITIONEN · ca. 12 MIN</small></div></div><span class="hero-credit">Bild: Tina Barney, <i>Sunday New York Times</i> (1982) · Quelle: Aperture</span></section>
 <section class="intro" id="intro"><div class="intro-grid"><div><span class="tiny-label">Worum es geht</span><h2>Nähe ist<br><em>kein Bild.</em></h2></div><div class="intro-right"><p>Ein Familienporträt dokumentiert nicht einfach, wer zusammengehört. Es zeigt auch, wie wir uns positionieren, welche Rollen wir spielen – und wie eine Kamera diese Beziehungen verändert.</p><p>Von autobiografischen Innenräumen bis zu sorgfältig konstruierten Tableaus: Die folgenden Arbeiten zeigen sieben unterschiedliche Antworten auf die Frage, wie Nähe sichtbar werden kann.</p><p class="subnote">Zum Workshop „Making Portraits“: dokumentarische und inszenierte Fotografie, Gesten, Körperabstände, Familienbilder und die Beziehung zwischen Fotografierenden und Porträtierten. Tippe auf Fotografien für die Großansicht; Such- und Quellenlinks führen zu weiteren Werken.</p></div></div></section>
@@ -33,6 +54,7 @@
 <div class="float-nav is-hidden" id="floatNav" aria-label="Kapitel-Navigation"><button id="floatMenu" type="button" aria-label="Kapitelübersicht öffnen">☰</button><span class="active-name" id="activeName">01 / Tina Barney</span><button class="go-next" id="floatNext" type="button">Weiter ↓</button></div>
 <div class="menu" id="menu" role="dialog" aria-label="Kapitel auswählen" aria-modal="true"><div class="menu-head"><span class="tiny-label">Making Portraits · Übersicht</span><button class="top-btn" id="closeMenu" type="button">Schließen ✕</button></div><h2>Welches Bild<br><i>sehen wir jetzt?</i></h2><nav class="menu-list" id="menuList"></nav></div>
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lbTitle"><div class="lightbox-top"><span class="tiny-label" id="lbCounter">WERK / 01</span><button class="lightbox-close" type="button" id="lbClose">Schließen ✕</button></div><div class="lightbox-visual"><button class="lightbox-arrow lightbox-prev" id="lbPrev" aria-label="Vorheriges Werk">←</button><img id="lbImg" alt=""><button class="lightbox-arrow lightbox-next" id="lbNext" aria-label="Nächstes Werk">→</button></div><div class="lightbox-footer"><div><strong id="lbTitle"></strong><p id="lbDesc"></p></div><a id="lbSource" href="#" target="_blank" rel="noopener noreferrer">Zur Quelle ↗</a></div></div>
+<div class="share-overlay" id="shareDialog" role="dialog" aria-modal="true" aria-labelledby="shareTitle" hidden><div class="share-card"><div class="share-head"><div><span class="tiny-label">Making Portraits · Family</span><h2 id="shareTitle">Weitergeben.</h2></div><button type="button" class="share-close" id="closeShare" aria-label="Teilen-Dialog schließen">✕</button></div><p class="share-subtitle">Einfach scannen und direkt zur Übersicht gelangen.</p><div class="share-qr-frame"><img src="data:image/png;base64,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" width="328" height="328" alt="QR-Code zur Website Making Portraits – Family Portrait"></div><a class="share-url" id="shareLink" href="https://daveporkins.github.io/making-family-portraits/" target="_blank" rel="noopener noreferrer">daveporkins.github.io/making-family-portraits/</a><button class="share-copy" type="button" id="copyShare">Link kopieren <span aria-hidden="true">↗</span></button><p class="share-feedback" id="shareFeedback" role="status" aria-live="polite"></p></div></div>
 <script>
 'use strict';
 const ARTISTS=[
@@ -396,5 +418,42 @@ function updateScroll(){const scrollTop=window.scrollY,limit=document.documentEl
  $('floatNav').classList.toggle('is-hidden',!show);ticking=false;}
 window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(updateScroll);ticking=true}},{passive:true});window.addEventListener('resize',updateScroll);updateScroll();
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('seen');observer.unobserve(e.target)}}),{threshold:.08,rootMargin:'0px 0px -25px 0px'});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+/* Share the fixed start URL (never a chapter-specific fragment). */
+let shareLastFocus=null;
+function openShareDialog(){
+  shareLastFocus=document.activeElement;
+  $('shareFeedback').textContent='';
+  $('shareDialog').hidden=false;
+  document.body.style.overflow='hidden';
+  $('closeShare').focus();
+}
+function closeShareDialog(){
+  if($('shareDialog').hidden)return;
+  $('shareDialog').hidden=true;
+  document.body.style.overflow='';
+  shareLastFocus?.focus();
+}
+$('openShare').addEventListener('click',openShareDialog);
+$('closeShare').addEventListener('click',closeShareDialog);
+$('shareDialog').addEventListener('click',e=>{if(e.target===$('shareDialog'))closeShareDialog()});
+$('shareDialog').addEventListener('keydown',e=>{
+  if(e.key==='Escape'){e.preventDefault();closeShareDialog();}
+  if(e.key==='Tab'){
+    const controls=[$('closeShare'),$('shareLink'),$('copyShare')];
+    const i=controls.indexOf(document.activeElement);
+    if(e.shiftKey&&i===0){e.preventDefault();controls[controls.length-1].focus();}
+    else if(!e.shiftKey&&i===controls.length-1){e.preventDefault();controls[0].focus();}
+  }
+});
+$('copyShare').addEventListener('click',async()=>{
+  const url=$('shareLink').href;
+  try{
+    await navigator.clipboard.writeText(url);
+    $('shareFeedback').textContent='Link kopiert!';
+  }catch(_){
+    $('shareFeedback').textContent='Kopieren nicht möglich – bitte den Link oben markieren.';
+  }
+});
 </script>
 </body></html>
