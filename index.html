@@ -39,6 +39,36 @@
 .share-feedback{min-height:17px;margin:8px 0 0;font-size:12px;color:#46604a}
 @media(max-width:690px){.topbar{gap:7px}.header-actions{gap:6px}.share-trigger{width:35px;height:35px;min-width:35px}.top-btn.menu-trigger{padding:9px 11px}}
 @media(max-width:350px){.brand{font-size:8px}.brand-symbol{width:28px;height:28px}.top-btn.menu-trigger{padding:9px 8px}.topbar{gap:5px}}
+
+/* Editorial refinement: legibility, portrait scale, and measured vertical rhythm */
+body{font-size:16px;line-height:1.55}
+.topbar{gap:10px}.header-actions{align-items:center}
+.chapter-image{height:clamp(560px,82svh,860px)}
+.chapter-intro h2{font-size:clamp(70px,10vw,145px);line-height:.92}
+.chapter-intro p{max-width:760px;font-size:clamp(19px,2.15vw,26px)}
+.chapter-inner{padding-top:clamp(55px,7vw,85px);padding-bottom:clamp(58px,7vw,88px)}
+.bio-row{grid-template-columns:clamp(235px,24vw,330px) minmax(0,1fr);gap:clamp(34px,5vw,80px)}
+.bio-pic{width:100%;aspect-ratio:4/5;object-position:top center;filter:grayscale(70%)}
+.bio-essay{grid-template-columns:minmax(0,1.35fr) minmax(215px,.65fr);gap:clamp(25px,4vw,52px)}
+.bio-essay h3{font-size:clamp(37px,4vw,56px);line-height:1.05;margin:12px 0 19px}
+.bio-essay p{font-size:clamp(17px,1.55vw,19px);line-height:1.7}
+.bio-label{font-size:12px;line-height:1.5}
+.tech-meta{font-size:14px}.tech-meta p{font-size:15px;line-height:1.65;color:var(--chapter-secondary)}
+.small-kicker,.chapter-no,.chapter-intro .rubric{font-size:12px;letter-spacing:.13em;line-height:1.5}
+.thin-line{margin:clamp(53px,6vw,82px) 0 18px}
+.gallery-header{margin-bottom:21px}.gallery-header h3{font-size:clamp(42px,5.5vw,72px);margin:9px 0}
+.gallery-header p{font-size:14px;line-height:1.55}
+.art-info p,.details-content p{font-size:15px;line-height:1.66}
+.art-counter,.index-n{font-size:12px;letter-spacing:.12em}
+.work-links a,.extra-link,.chapter-nav a{font-size:13px;line-height:1.55}
+.reflection{margin-top:clamp(65px,7vw,95px)}
+.reflection p{font-size:clamp(34px,4.7vw,66px)}
+.details{margin-top:50px}.details summary{font-size:15px}
+.bio-source{display:inline-block;margin-top:22px;font-size:13px;text-decoration:underline;text-underline-offset:4px}
+.end-footer{margin-top:65px;font-size:13px}.end{padding-top:clamp(65px,8vw,100px)}
+.index-line{font-size:12px;line-height:1.45}
+@media(max-width:1050px){.bio-row{grid-template-columns:245px minmax(0,1fr)}.bio-essay{grid-template-columns:1fr}.bio-essay h3{font-size:45px}}
+@media(max-width:690px){.chapter-image{height:79svh;min-height:540px}.chapter-intro{bottom:58px}.chapter-intro h2{font-size:clamp(65px,14vw,105px)}.chapter-inner{padding-top:46px;padding-bottom:60px}.bio-row{grid-template-columns:1fr;gap:22px}.bio-row>div:first-child{width:min(260px,72vw)}.bio-pic{aspect-ratio:4/4.4}.bio-essay h3{font-size:43px;margin:8px 0 15px}.bio-essay p{font-size:17px}.bio-label{font-size:12px}.tech-meta p{font-size:15px}.chapter-intro .rubric,.small-kicker{font-size:12px}.gallery-header h3{font-size:52px}.art-info h4{font-size:32px}.art-info p{font-size:16px}.reflection{margin-top:60px}.details{margin-top:44px}.index-name{font-size:15px}.index-line{font-size:12px}}
 </style>
 </head>
 <body>
@@ -69,8 +99,8 @@ const ARTISTS=[
     "mood": "champagne",
     "role": "Beobachten / Arrangieren",
     "lead": "Eine Familie kann ganz nah beieinander sein – und dennoch aneinander vorbeileben.",
-    "idea": "Barney fotografiert Familie und Bekannte aus der wohlhabenden US-Ostküstenwelt. Ihre großformatigen Farbaufnahmen lassen alltägliche Gesten wie sorgfältig arrangierte Szenen wirken: Kleidung, Tapeten, Gegenstände und Blickrichtungen erzählen ebenso viel wie die Personen.",
-    "technique": "Großformatkamera, Stativ, häufig zusätzliches Licht. Zwischen spontanen Gesten und bewusster Regie entsteht ein beinahe malerisches Tableau.",
+    "idea": "Tina Barney fotografiert Familie und Bekannte aus dem wohlhabenden Milieu der US-Ostküste. In den detailreichen Farbaufnahmen werden Gesten, Interieurs und Blickrichtungen zu einer sorgfältig komponierten sozialen Szene.",
+    "technique": "Großformatkamera und Stativ; spontane Bewegungen treffen auf bewusste Anweisungen. So entstehen Bilder zwischen Momentaufnahme und Tableau.",
     "detail": "Wer spricht in diesem Raum miteinander? Und wer schaut an den anderen vorbei?",
     "practice": "Bitte zwei Personen, eine echte Alltagshandlung kurz anzuhalten. Verändere nichts und beobachte dann, wie die Komposition sofort inszeniert wirkt.",
     "portrait": {
@@ -99,7 +129,8 @@ const ARTISTS=[
         "search": "Tina Barney Jill & Polly in the Bathroom 1987"
       }
     ],
-    "extra": null
+    "extra": null,
+    "reference": "https://www.tinabarney.com/"
   },
   {
     "id": "larry-sultan",
@@ -112,8 +143,8 @@ const ARTISTS=[
     "mood": "honey",
     "role": "Erinnern / Verhandeln",
     "lead": "Wer besitzt die Geschichte einer Familie – die Eltern oder das Kind mit der Kamera?",
-    "idea": "Über Jahre besucht Sultan seine Eltern im kalifornischen Vorstadthaus. Er verbindet eigene Fotografien mit Familienfilmen, Erinnerungen und Aussagen seiner Eltern. Das fotografische Porträt wird zur Auseinandersetzung darüber, wie sie gesehen werden möchten.",
-    "technique": "Farbaufnahmen im häuslichen Raum, häufig mit natürlichem oder vorhandenem Licht. Das Fotobuch verknüpft Bilder, Texte und Archivmaterial.",
+    "idea": "In Pictures from Home porträtiert Larry Sultan über Jahre seine Eltern in Kalifornien. Eigene Fotos, Familienfilme und Gespräche zeigen, wie sehr Familienbilder auch ausgehandelte Selbstdarstellungen sind.",
+    "technique": "Farbige Innenräume und wechselnde Formen der Inszenierung. Im Fotobuch treten Aufnahmen, Archivmaterial und Stimmen seiner Eltern miteinander in Dialog.",
     "detail": "Welche Rolle spielt sein Vater für die Kamera – und welche Rolle spielt Sultan als Sohn?",
     "practice": "Frage eine porträtierte Person, welches Bild sie von sich selbst zeigen möchte. Fotografiert anschließend gemeinsam eine zweite, anders verhandelte Version.",
     "portrait": {
@@ -142,7 +173,8 @@ const ARTISTS=[
         "search": "Larry Sultan My Mother Posing for Me 1984"
       }
     ],
-    "extra": null
+    "extra": null,
+    "reference": "https://www.larrysultan.com/gallery/pictures-from-home/"
   },
   {
     "id": "carrie-mae-weems",
@@ -155,8 +187,8 @@ const ARTISTS=[
     "mood": "night",
     "role": "Inszenieren / Erzählen",
     "lead": "Ein Küchentisch. Eine Lampe. Ein Raum, in dem ein ganzes Leben stattfinden kann.",
-    "idea": "Weems tritt selbst als zentrale Figur in einer inszenierten Geschichte über Beziehungen, Mutterschaft, Freundschaft, Begehren und Selbstbestimmung auf. Wiederholung des Bildausschnitts und begleitende Texttafeln verwandeln alltägliche Gesten in eine vielschichtige Erzählung.",
-    "technique": "Konstante Frontalperspektive, kontrolliertes Licht unter einer Deckenlampe, Schwarzweiß. Die Werkgruppe umfasst 20 Fotografien und 14 Texttafeln.",
+    "idea": "Carrie Mae Weems inszeniert eine fiktive Geschichte um eine Schwarze Frau, die sie selbst verkörpert. Am immer gleichen Küchentisch verändern wechselnde Beziehungen und Texttafeln die Bedeutung des Raums.",
+    "technique": "20 inszenierte Fotografien und 14 Texttafeln (1990). Feste Kameraperspektive, Deckenlampe und Schwarzweißbilder verbinden die Szenen.",
     "detail": "Was verändert sich, wenn der Ort gleich bleibt, aber die Körper und Beziehungen wechseln?",
     "practice": "Lege einen festen Kamerastandpunkt fest. Fotografiere dieselbe Tischszene dreimal, jeweils mit einer anderen sozialen Konstellation.",
     "portrait": {
@@ -185,7 +217,8 @@ const ARTISTS=[
         "search": "Carrie Mae Weems Untitled (Woman Playing Solitaire) 1990"
       }
     ],
-    "extra": null
+    "extra": null,
+    "reference": "https://www.nga.gov/artworks/209288-kitchen-table-series"
   },
   {
     "id": "latoya-ruby-frazier",
@@ -198,8 +231,8 @@ const ARTISTS=[
     "mood": "silver",
     "role": "Mitwirken / Bezeugen",
     "lead": "Ein Familienbild kann zugleich eine Geschichte von Körpern, Arbeit und einer ganzen Stadt erzählen.",
-    "idea": "In Braddock, Pennsylvania, fotografiert Frazier sich, ihre Mutter und Großmutter vor dem Hintergrund von Deindustrialisierung, Umweltbelastung und gesundheitlicher Ungleichheit. Insbesondere die Porträts mit ihrer Mutter entstehen in enger Zusammenarbeit.",
-    "technique": "Schwarzweißfotografie, Selbstporträts, Spiegel und geteilte Bildautorschaft. Das Persönliche und das Politische werden gleichzeitig sichtbar.",
+    "idea": "The Notion of Family folgt drei Generationen von Frauen in Braddock, Pennsylvania. LaToya Ruby Frazier verbindet das familiäre Leben mit der Geschichte von Industrie, Umweltbelastung und sozialen Ungleichheiten.",
+    "technique": "Schwarzweißfotografie und kollaborative Selbstporträts. Frazier teilt die Bildgestaltung unter anderem mit ihrer Mutter.",
     "detail": "Wer ist hier Autorin, wer ist Subjekt – und wie lässt sich diese Trennung auflösen?",
     "practice": "Gib der porträtierten Person Mitspracherecht über Pose, Ausschnitt und Auslösung. Besprecht danach, wem das Bild gehört.",
     "portrait": {
@@ -240,7 +273,8 @@ const ARTISTS=[
     "extra": {
       "title": "Momme Portrait Series (Shadow), 2008",
       "source": "https://rosegallery.net/artworks/22502-latoya-ruby-frazier-momme-shadow-from-momme-portrait-series-2008/"
-    }
+    },
+    "reference": "https://nmaahc.si.edu/explore/stories/latoya-ruby-frazier"
   },
   {
     "id": "deana-lawson",
@@ -253,8 +287,8 @@ const ARTISTS=[
     "mood": "copper",
     "role": "Konstruieren / Erhöhen",
     "lead": "Was wie ein privater Schnappschuss aussieht, kann eine präzise gebaute Ikone sein.",
-    "idea": "Lawson fotografiert Menschen in intimen Innenräumen. Ihre Porträts sind häufig bewusst komponiert: Kleidung, Gegenstände, Blicke und Berührungen erzeugen eine besondere körperliche und symbolische Präsenz. Familienbeziehungen können real, gewählt oder bildlich hergestellt sein.",
-    "technique": "Großformat, intensive Farbe, direkte Präsenz und minutiöse Inszenierung. Private Innenräume werden zu monumentalen Bildräumen.",
+    "idea": "Deana Lawson komponiert Porträts mit präzise gesetzten Körpern, Blicken und Gegenständen. Ihre Bilder spielen mit der Ästhetik privater Familienfotos, obwohl die dargestellten Beziehungen teils für die Kamera entstehen.",
+    "technique": "Großformat, intensive Farbe und sorgfältig arrangierte Innenräume. Vermeintlich spontane Szenen erhalten eine monumentale Wirkung.",
     "detail": "Welche Objekte im Hintergrund liefern Hinweise auf Herkunft, Beziehungen und Selbstbild?",
     "practice": "Gestalte ein Porträt, in dem mindestens drei Gegenstände bewusst gewählt sind. Lass die porträtierte Person die Bedeutungen mitbestimmen.",
     "portrait": {
@@ -267,7 +301,7 @@ const ARTISTS=[
       {
         "title": "Binky & Tony Forever",
         "year": "2009",
-        "desc": "Eine eng verschlungene Umarmung im Schlafzimmer: Nähe und Inszenierung zugleich.",
+        "desc": "Binky und Tony, im wirklichen Leben befreundet, posieren in Lawsons eigenem Schlafzimmer als Liebespaar.",
         "src": "https://res.cloudinary.com/dkvtc5ncc/image/upload/c_limit%2Cw_1080/f_auto/q_auto/v1743351114/Black_Life_05_2a0010d23a?_a=BAVC1WID0",
         "credit": "PhotoAnthology",
         "source": "https://photoanthology.org/projects/black-life",
@@ -276,14 +310,15 @@ const ARTISTS=[
       {
         "title": "Sons of Cush",
         "year": "2016",
-        "desc": "Ein Vater mit Baby, umgeben von Fotografien und Objekten: Familie als Bildraum.",
+        "desc": "Ein Mann hält ein Neugeborenes; Familienfotos und Gegenstände erweitern die Szene um weitere Generationen.",
         "src": "https://huismarseille.nl/app/uploads/2019/04/DL-Sons-of-Cush-150-dpi.jpg",
         "credit": "Huis Marseille",
         "source": "https://huismarseille.nl/en/exhibitions/deana-lawson/",
         "search": "Deana Lawson Sons of Cush 2016"
       }
     ],
-    "extra": null
+    "extra": null,
+    "reference": "https://huismarseille.nl/en/exhibitions/deana-lawson/"
   },
   {
     "id": "catherine-opie",
@@ -296,8 +331,8 @@ const ARTISTS=[
     "mood": "moss",
     "role": "Sichtbar machen / Zugehören",
     "lead": "Familie ist nicht nur Abstammung. Familie entsteht auch dort, wo Menschen füreinander da sind.",
-    "idea": "Für Domestic fotografierte Opie lesbische Paare, Freundeskreise und Familien in ihrem Zuhause. Die alltäglichen Situationen erhalten eine Würde, die in historischen Familienporträts oft nur normativen Familienformen zugestanden wurde.",
-    "technique": "Farbige Innenraumporträts mit klarer, ruhiger Komposition. Die Fotografierte Umgebung wird als eigener Ausdruck von Identität und Zugehörigkeit lesbar.",
+    "idea": "Für Domestic reist Catherine Opie durch die USA und fotografiert lesbische Paare und Familien in ihren Wohnungen. Die Porträts zeigen alltägliche Formen von Fürsorge, Nähe und Zugehörigkeit.",
+    "technique": "Großformatige Farbporträts mit ruhigen Kompositionen. Der Wohnraum gehört sichtbar zur Selbstdarstellung der Porträtierten.",
     "detail": "Was verändert sich an der Idee des Familienporträts, wenn wir Familie nicht biologisch definieren?",
     "practice": "Fotografiere Zugehörigkeit ohne eine klassische Gruppenaufstellung. Welche Geste oder räumliche Nähe reicht aus?",
     "portrait": {
@@ -308,28 +343,29 @@ const ARTISTS=[
     "video": "Catherine Opie Domestic series Art21 interview",
     "works": [
       {
-        "title": "Domestic Family Portrait",
-        "year": "1990er",
-        "desc": "Ein häuslicher Moment zwischen Erwachsenen und Kind: nicht spektakulär, gerade deshalb bedeutsam.",
-        "src": "https://s3.amazonaws.com/files.collageplatform.com.prod/image_cache/1800x1800_fit/54522d19cfaf3430698b4568/11b6106222ab997100da7ae642fefa4e.jpeg",
-        "credit": "Regen Projects",
+        "title": "Catherine, Melanie & Sadie Rain, New York",
+        "year": "1998",
+        "desc": "Drei Menschen am Fenster: Gesten und Nähe zeigen einen häuslichen Moment ohne klassische Gruppenaufstellung.",
+        "src": "https://www.christies.com/img/LotImages/2025/NYR/2025_NYR_23978_0097_000%28catherine_opie_catherine_melanie_amp_sadie_rain_new_york_new_york101742%29.jpg?mode=max",
+        "credit": "Christie's / Catherine Opie",
         "source": "https://www.regenprojects.com/exhibitions/catherine-opie3",
-        "search": "Catherine Opie Domestic Family Portrait 1990er"
+        "search": "Catherine Opie Catherine Melanie Sadie Rain New York 1998"
       },
       {
         "title": "Miggi & Ilene, Los Angeles",
-        "year": "1990er",
-        "desc": "Zwei Menschen, Bett, Hund, Bilder an der Wand: Alltagsnähe jenseits normativer Porträtrituale.",
+        "year": "1995",
+        "desc": "Zwei Frauen im privaten Raum: eine Szene aus Opies dokumentarischer Serie Domestic.",
         "src": "https://s3.amazonaws.com/files.collageplatform.com.prod/image_cache/1820x1200_fit/54522d19cfaf3430698b4568/952094aba3950f8654c062a2ad2038df.jpeg",
         "credit": "Regen Projects",
         "source": "https://www.regenprojects.com/exhibitions/catherine-opie3",
-        "search": "Catherine Opie Miggi & Ilene, Los Angeles 1990er"
+        "search": "Catherine Opie Miggi & Ilene Los Angeles California 1995"
       }
     ],
     "extra": {
       "title": "Self-Portrait/Cutting, 1993 (enthält eine Darstellung von Hautverletzungen)",
       "source": "https://www.google.com/search?tbm=isch&q=Catherine+Opie+Self+Portrait+Cutting+1993"
-    }
+    },
+    "reference": "https://www.regenprojects.com/exhibitions/catherine-opie3"
   },
   {
     "id": "thomas-struth",
@@ -342,8 +378,8 @@ const ARTISTS=[
     "mood": "slate",
     "role": "Positionieren / Beobachten",
     "lead": "Wenn alle in die Kamera schauen, werden die Zwischenräume sichtbar.",
-    "idea": "Struths Familienporträts zeigen Gruppen in ihren eigenen Interieurs. Sitzordnung, Blicke, Berührungen und Abstände lassen Fragen nach familiärer Zugehörigkeit und Rollen entstehen – ohne dass das Bild eindeutige psychologische Antworten liefern müsste.",
-    "technique": "Häufig große Kamera auf Stativ, frontale Komposition, sorgfältig gewählter Raum und ausgeprägte Detailschärfe. Die Familien sind aktiv an ihrer Positionierung beteiligt.",
+    "idea": "Thomas Struth fotografiert Familien in ihren Wohnräumen. Sitzordnung, Blicke und Abstände zeigen eine bewusst eingenommene Haltung vor der Kamera – ohne eine eindeutige psychologische Deutung vorzugeben.",
+    "technique": "Frontale, detaillierte Farbfotografie, häufig mit Großformatkamera und Stativ. Die Positionierung der Porträtierten ist Teil des Bildes.",
     "detail": "Was lesen wir in der Sitzordnung – und was projizieren wir möglicherweise selbst hinein?",
     "practice": "Lass eine Gruppe ihren Platz vor der Kamera selbst wählen. Mach ein Bild; bitte sie danach, nur eine Position zu ändern. Vergleicht die Wirkung.",
     "portrait": {
@@ -372,7 +408,8 @@ const ARTISTS=[
         "search": "Thomas Struth The Hirose Family, Hiroshima 1987"
       }
     ],
-    "extra": null
+    "extra": null,
+    "reference": "https://high.org/collection/the-richter-family-1-koln/"
   }
 ];
 const $=id=>document.getElementById(id);
@@ -390,7 +427,7 @@ const worksHTML=a.works.map((w,j)=>{
   const n=lightboxItems.push({w,a})-1;
   return `<article class="art-card reveal"><button class="art-image" type="button" data-lightbox="${n}" aria-label="${clean(w.title)} als Großansicht öffnen">${imgTag(w.src,a.name+' — '+w.title)}<div class="image-fallback"><span>Bild extern nicht verfügbar.<br>Werk über die Bildsuche öffnen ↗</span></div><span class="image-zoom" aria-hidden="true">↗</span></button><div class="art-info"><span class="art-counter">WERK 0${j+1} / 0${a.works.length} · ${clean(w.year)}</span><h4>${clean(w.title)}</h4><p>${clean(w.desc)}</p><div class="work-links"><a href="${clean(w.source)}" target="_blank" rel="noopener noreferrer">Quelle: ${clean(w.credit)} ↗</a><a href="${google(w.search)}" target="_blank" rel="noopener noreferrer">Google Bilder ↗</a></div></div></article>`;
 }).join('');
-return `<section class="chapter" id="${a.id}" data-mood="${a.mood}" data-artist="${i}"><div class="chapter-image"><img class="backdrop" src="${clean(first.src)}" alt="${clean(a.name+': '+first.title)}" loading="${i===0?'eager':'lazy'}" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="chapter-no">POSITION ${a.number} / 07 &nbsp;·&nbsp; ${clean(a.label)}</span><div class="chapter-intro"><span class="rubric">${clean(a.role)}</span><h2>${clean(a.name)}</h2><p>${clean(a.lead)}</p></div><span class="chapter-hero-credit">${clean(first.title)}, ${clean(first.year)} · ${clean(first.credit)}</span></div><div class="chapter-inner"><div class="bio-row reveal"><div><a href="${clean(a.portrait.source)}" target="_blank" rel="noopener noreferrer" aria-label="Quelle zum Porträt von ${clean(a.name)} öffnen"><img class="bio-pic" src="${clean(a.portrait.src)}" alt="Porträt von ${clean(a.name)}" loading="lazy" referrerpolicy="no-referrer"></a><p class="bio-label">${clean(a.portrait.credit)} ↗</p></div><div class="bio-essay"><div><span class="small-kicker">${clean(a.years)} · ${clean(a.series)}</span><h3>Die Position.</h3><p>${clean(a.idea)}</p></div><div class="tech-meta"><span class="small-kicker">Die Bildsprache</span><p>${clean(a.technique)}</p><div style="margin-top:25px"><a href="${google(a.name+' '+a.series+' photography')}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-bottom:12px">↗ Alle Bilder</a><br><a href="${youtube(a.video)}" target="_blank" rel="noopener noreferrer">↗ Videos & Talks</a></div></div></div></div><div class="thin-line"></div><div class="gallery-header reveal"><div><span class="small-kicker">Ausgewählte Arbeiten</span><h3>Genauer hinsehen.</h3></div><p>Antippen, um groß anzusehen. Quellen und Bildersuche öffnen weitere Ansichten.</p></div><div class="gallery">${worksHTML}</div>${a.extra?`<a class="extra-link" href="${clean(a.extra.source)}" target="_blank" rel="noopener noreferrer">Noch ein wichtiges Werk: ${clean(a.extra.title)} ↗</a>`:''}<div class="reflection reveal"><span class="small-kicker">Eine Frage an das Bild</span><p>${clean(a.detail)}</p></div><details class="details"><summary>Zum Ausprobieren: Kamera und Körper <span class="sr-only">Details aufklappen</span></summary><div class="details-content"><div><span class="small-kicker">Fotografische Haltung</span><p>${clean(a.technique)}</p></div><div><span class="small-kicker">Eine kleine Übung</span><p>${clean(a.practice)}</p></div></div></details></div><div class="chapter-nav"><a href="#index">↑ Alle Positionen</a><a class="next-link" href="#${i===ARTISTS.length-1?'praxis':ARTISTS[i+1].id}"><span>${i===ARTISTS.length-1?'Zur Praxis': 'Nächste Position'}<br><strong>${i===ARTISTS.length-1?'Dein Blick':clean(ARTISTS[i+1].short)}</strong></span><span class="arr">↘</span></a></div></section>`;
+return `<section class="chapter" id="${a.id}" data-mood="${a.mood}" data-artist="${i}"><div class="chapter-image"><img class="backdrop" src="${clean(first.src)}" alt="${clean(a.name+': '+first.title)}" loading="${i===0?'eager':'lazy'}" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="chapter-no">POSITION ${a.number} / 07 &nbsp;·&nbsp; ${clean(a.label)}</span><div class="chapter-intro"><span class="rubric">${clean(a.role)}</span><h2>${clean(a.name)}</h2><p>${clean(a.lead)}</p></div><span class="chapter-hero-credit">${clean(first.title)}, ${clean(first.year)} · ${clean(first.credit)}</span></div><div class="chapter-inner"><div class="bio-row reveal"><div><a href="${clean(a.portrait.source)}" target="_blank" rel="noopener noreferrer" aria-label="Quelle zum Porträt von ${clean(a.name)} öffnen"><img class="bio-pic" src="${clean(a.portrait.src)}" alt="Porträt von ${clean(a.name)}" loading="lazy" referrerpolicy="no-referrer"></a><p class="bio-label">${clean(a.portrait.credit)} ↗</p></div><div class="bio-essay"><div><span class="small-kicker">${clean(a.years)} · ${clean(a.series)}</span><h3>${clean(a.label)}</h3><p>${clean(a.idea)}</p></div><div class="tech-meta"><span class="small-kicker">Die Bildsprache</span><p>${clean(a.technique)}</p><div style="margin-top:25px"><a href="${google(a.name+' '+a.series+' photography')}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-bottom:12px">↗ Alle Bilder</a><br><a href="${youtube(a.video)}" target="_blank" rel="noopener noreferrer">↗ Videos & Talks</a><br><a class="bio-source" href="${clean(a.reference)}" target="_blank" rel="noopener noreferrer">↗ Kontext & Quellen</a></div></div></div></div><div class="thin-line"></div><div class="gallery-header reveal"><div><span class="small-kicker">Ausgewählte Arbeiten</span><h3>Genauer hinsehen.</h3></div><p>Antippen, um groß anzusehen. Quellen und Bildersuche öffnen weitere Ansichten.</p></div><div class="gallery">${worksHTML}</div>${a.extra?`<a class="extra-link" href="${clean(a.extra.source)}" target="_blank" rel="noopener noreferrer">Noch ein wichtiges Werk: ${clean(a.extra.title)} ↗</a>`:''}<div class="reflection reveal"><span class="small-kicker">Eine Frage an das Bild</span><p>${clean(a.detail)}</p></div><details class="details"><summary>Zum Ausprobieren: Kamera und Körper <span class="sr-only">Details aufklappen</span></summary><div class="details-content"><div><span class="small-kicker">Fotografische Haltung</span><p>${clean(a.technique)}</p></div><div><span class="small-kicker">Eine kleine Übung</span><p>${clean(a.practice)}</p></div></div></details></div><div class="chapter-nav"><a href="#index">↑ Alle Positionen</a><a class="next-link" href="#${i===ARTISTS.length-1?'praxis':ARTISTS[i+1].id}"><span>${i===ARTISTS.length-1?'Zur Praxis': 'Nächste Position'}<br><strong>${i===ARTISTS.length-1?'Dein Blick':clean(ARTISTS[i+1].short)}</strong></span><span class="arr">↘</span></a></div></section>`;
 };
 $('chapters').innerHTML=ARTISTS.map(chapterHTML).join('');
 function openMenu(){lastFocus=document.activeElement;$('menu').classList.add('open');document.body.style.overflow='hidden';$('closeMenu').focus()}
